@@ -316,18 +316,18 @@ function clearAllSales() {
 ========================= */
 function submitSaleToGoogleForm(sale) {
   const formUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdjXVJj4HT31S5NU6-7KUBQz7xyU_d9YuZN4BzaD1T5Mg7Bjg/formResponse";
+    "https://docs.google.com/forms/d/e/1FAIpQLSclmoUb_V44uk6AdT1bY9RDqJvRLvUeyMTCnRNRCXrz_KDkPQ/formResponse";
 
   const formData = new URLSearchParams();
-  formData.append("entry.902078713", sale.item);
-  formData.append("entry.448082825", sale.unit);
-  formData.append("entry.617272247", String(sale.quantity));
-  formData.append("entry.591650069", String(sale.price));
-  formData.append("entry.209491416", String(sale.discount));
-  formData.append("entry.1362215713", String(sale.extra));
-  formData.append("entry.492804547", String(sale.total));
-  formData.append("entry.197957478", sale.paymentMethod);
-  formData.append("entry.370318910", stores[currentStore]?.name || currentStore);
+  formData.append("entry.1617444836", sale.item);
+  formData.append("entry.591095593", sale.unit);
+  formData.append("entry.268864996", String(sale.quantity));
+  formData.append("entry.53788851", String(sale.price));
+  formData.append("entry.411866054", String(sale.discount));
+  formData.append("entry.511901350", String(sale.extra));
+  formData.append("entry.1094112162", String(sale.total));
+  formData.append("entry.1094112162", sale.paymentMethod);
+  formData.append("entry.106245113, stores[currentStore]?.name || currentStore);
 
   return fetch(formUrl, {
     method: "POST",
