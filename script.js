@@ -327,7 +327,7 @@ function submitSaleToGoogleForm(sale) {
   formData.append("entry.511901350", String(sale.extra));
   formData.append("entry.1094112162", String(sale.total));
   formData.append("entry.1094112162", sale.paymentMethod);
-  formData.append("entry.106245113, stores[currentStore]?.name || currentStore);
+  formData.append("entry.106245113", stores[currentStore]?.name || currentStore);
 
   return fetch(formUrl, {
     method: "POST",
