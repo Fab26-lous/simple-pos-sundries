@@ -64,7 +64,7 @@ const stores = {
 ========================= */
 const SHEET_ID = "1lO_XUqATXSP4XBlGxJvMibFf-KwQE5cUIw_1A8qA0gg";
 const GID = "1260434939"; // your sheet tab gid
-const GOOGLE_SHEETS_CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
+const GOOGLE_SHEETS_CSV_URL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vRZdZel2WEtgv4uS9ybI-MhrC_ChEM8ykP_G4H55ECaRzb8_kg3H12ySQsN7vGPP8CkJYJHndWawwI0/pub?gid=0&single=true&output=csv`;
 
 /* =========================
    MAIN POS VARIABLES
