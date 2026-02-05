@@ -744,7 +744,7 @@ function ensureHiddenIframe() {
 
 async function submitStockAdjustmentToGoogleForm(adjustment) {
   const formUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLSeTdAktfy1tm486oSh64FA7L7pTTgxaWH01-fDUSbSpJ6QV2g/formResponse";
+    "https://docs.google.com/forms/d/e/1FAIpQLScXAN-92_F1BDYpQ_cVo9A6PInT_RxI7XWuYVFm7LxQpIeUPw/formResponse";
 
   const UNIT_MAP = { pc: "pc", dz: "dz", ct: "ct" };
   const TYPE_MAP = { add: "Add", remove: "Remove", set: "Set" };
@@ -754,11 +754,11 @@ async function submitStockAdjustmentToGoogleForm(adjustment) {
   const storeValue = stores[currentStore]?.name || "";
 
   const payload = new URLSearchParams();
-  payload.append("entry.1351663693", adjustment.name || "");
-  payload.append("entry.2099316372", unitValue);
-  payload.append("entry.1838734272", String(adjustment.quantity || 0));
-  payload.append("entry.1785029976", typeValue);
-  payload.append("entry.1678851527", storeValue);
+  payload.append("entry.907585622", adjustment.name || "");
+  payload.append("entry.35356559", unitValue);
+  payload.append("entry.1457043352", String(adjustment.quantity || 0));
+  payload.append("entry.1711231423", typeValue);
+  payload.append("entry.763520958", storeValue);
 
   if (adjustment._submitting) return { status: "skipped-duplicate" };
   adjustment._submitting = true;
